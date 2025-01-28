@@ -228,3 +228,4 @@ resource "google_dns_record_set" "cloud-static-records" {
     google_dns_managed_zone.public,
   ]
 }
+

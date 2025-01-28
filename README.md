@@ -22,7 +22,7 @@ To use this module, include it in your Terraform configuration. Below is an exam
 ## Example: forwarding
 ```hcl
 module "dns_forwarding_zone" {
-  source                             = "https://github.com/SyncArcs/terraform-google-dns.git"
+  source                             = "git::https://github.com/SyncArcs/terraform-google-dns.git?ref=v1.0.0"
   type                               = "forwarding"
   name                               = "app-test"
   environment                        = "forwarding-zone"
@@ -46,7 +46,7 @@ module "dns_forwarding_zone" {
 
 ```hcl
 module "dns_peering_zone" {
-  source                             = "https://github.com/SyncArcs/terraform-google-dns.git"
+  source                             = "git::https://github.com/SyncArcs/terraform-google-dns.git?ref=v1.0.0"
   type                               = "peering"
   name                               = "app-test"
   environment                        = "peering-zone"
@@ -65,7 +65,7 @@ module "dns_peering_zone" {
 
 ```hcl
 module "dns_private_zone" {
-  source                             = "https://github.com/SyncArcs/terraform-google-dns.git"
+  source                             = "git::https://github.com/SyncArcs/terraform-google-dns.git?ref=v1.0.0"
   type                               = "private"
   name                               = "app-test"
   environment                        = "private-zone"
@@ -122,7 +122,7 @@ module "dns_private_zone" {
 
 ```hcl
 module "dns_public_zone" {
-  source                             = "https://github.com/SyncArcs/terraform-google-dns.git"
+  source                             = "git::https://github.com/SyncArcs/terraform-google-dns.git?ref=v1.0.0"
   type                               = "public"
   name                               = "app-test"
   environment                        = "public-zone"

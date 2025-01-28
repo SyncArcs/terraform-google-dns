@@ -52,3 +52,4 @@ resource "google_dns_response_policy_rule" "this" {
     }
   }
 }
+

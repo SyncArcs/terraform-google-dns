@@ -18,3 +18,4 @@ output "creation_time" {
   description = "The time that this resource was created on the server."
   value       = module.dns_private_zone.creation_time
 }
+
